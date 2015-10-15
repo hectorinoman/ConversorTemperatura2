@@ -1,0 +1,36 @@
+{
+  "name": "ConversorTemperatura",
+  "version": "0.0.1",
+  "description": "ULL ESIT Grado de Informática. Lab \"Temperature Converter\"",
+  "main": "temperatura.js",
+  "scripts": {
+    "test": "open tests/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hectorinoman/ConversorTemperatura.git"
+  },
+  "keywords": [
+    "regexp"
+  ],
+  "author": "Hector",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hectorinoman/ConversorTemperatura/issues"
+  },
+  "homepage": "https://github.com/hectorinoman/ConversorTemperatura",
+  "devDependencies": {
+    "chai": "^3.3.0",
+    "del": "^2.0.2",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-minify-css": "^1.2.1",
+    "gulp-minify-html": "^1.0.4",
+    "gulp-uglify": "^1.4.2",
+    "gulp-util": "^3.0.6"
+  },
+  "dependencies": {
+    "normalize.css": "^3.0.3",
+    "uglify-js": "^2.5.0"
+  }
+}
