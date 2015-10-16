@@ -6,9 +6,6 @@ describe("TesT", function() {
 
 
   it("56F", function() {
-    
-    Temperatura.prototype = new Temperatura;
-      
     var temp = new Medida(56,"F");
     expect(temp.get_valor()).to.equal(56);
     expect(temp.get_tipo()).to.equal("F");
