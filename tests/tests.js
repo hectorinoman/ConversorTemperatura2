@@ -16,5 +16,13 @@ describe("TesT", function() {
     expect(temp.get_valor()).to.equal(78);
     expect(temp.get_tipo()).to.equal("C");
   });
+  
+    it("5X = ERROR", function() {
+      window.onload = function() {
+        var temp = new Medida(5,0,"X");
+        calculate();
+        expect(fin.innerHTML).to.match("/ERROR/");
+      }
+    });
 
 });
