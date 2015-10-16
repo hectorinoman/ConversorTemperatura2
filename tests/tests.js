@@ -1,26 +1,27 @@
-var assert = chai.assert;
+var expect = chai.expect;
 
-suite('temperature', function() {
-    test('32F = 0C', function() {
-        original.value = "32F";
-        calculate();
-        assert.deepEqual(converted.innerHTML, "0.0 Celsius");
-    });
+describe("__ TEST BDD __", function() {
 
-    test('5X = error', function() {
-        original.value = "5X";
-        calculate();
-        assert.match(converted.innerHTML, /ERROR/);
-    });
-    test('Resultado == String', function() {
-       original.value = "-2.4K";
-       calculate();
-       assert.isString(converted.innerHTML);
-   });
-   test('Resultado != Null', function() {
-      original.value = "-3.6F";
-      calculate();
-      assert.isNotNull(converted.innerHTML);
+
+
+  it("32F", function() {
+    var temp = new Temperatura(32,"F");
+    expect(temp.get_valor()).to.equal(32);
+    expect(temp.get_tipo()).to.equal("F");
   });
 
-});
+  it("45C", function() {
+    var temp = new Temperatura(45,"C");
+    expect(temp.get_valor()).to.equal(45);
+    expect(temp.get_tipo()).to.equal("C");
+  });
+  
+  it("5X = ERROR", function() {
+      window.onload = function() {
+        var temp = new Temperatura(5,0,"X");
+        convertir();
+        expect(fin.innerHTML).to.match("/ERROR/");
+      }
+    });  
+  
+}
