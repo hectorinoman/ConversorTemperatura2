@@ -45,7 +45,7 @@ function calculate() {
     var type = m[2];  // lo que cogio los segundos parentesis si son celcius o farengeis
     
       Temperatura.prototype = new Medida;
-      a = new Temperatura(num,type);
+      var a = new Temperatura(num,type);
    
   
   }
