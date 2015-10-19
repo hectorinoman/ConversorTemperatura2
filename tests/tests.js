@@ -17,6 +17,8 @@ describe("TesT", function() {
     expect(temp.get_tipo()).to.equal("C");
   });
   
+
+
     it("5X = ERROR", function() {
       window.onload = function() {
         var temp = new Medida(5,0,"X");
@@ -41,5 +43,6 @@ describe("TesT", function() {
     var result = temp.Fahrenheit();
     expect(result).to.equal(46.814);
   });
+  
 
 });
